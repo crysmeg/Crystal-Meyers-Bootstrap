@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bootstrap Playing</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap-responsive.min.css" rel="stylesheet" media="screen" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen" />
+    <style>
+	body{
+		margin: 0px;
+		background-color: #eee;
+	}
+	#wrapper{
+		width: 960px;
+		margin: 0px auto;
+		padding: 10px;
+		background-color: #fff;
+	}
+	header{
+		margin-right: 30px;
+		margin-top: 10px;
+		float: right;
+	}
+	section{
+		padding: 3px;
+		margin-bottom: 10px;
+		clear: both;
+	}
+	#imgGallery{
+		width: 900px;
+		margin: 25px;	
+	}
+	.content{
+		margin-bottom: 30px;	
+	}
+	.column{
+		background-color: #eee;
+		float: left;
+		padding: 5px;
+	}
+	.col-right{
+		float: right;
+	}
+	footer{
+		margin: 20px;
+		padding: 10px;
+		clear: both;
+		height: 120px;
+		border-top: 1px solid #000;
+	}
+	</style>
+    
+  </head>
+  
+  <body>
+  <div id="wrapper">
+  
+  <header>
+  <!--Search Bar -->
+	<form class="form-search">
+  		<input type="text" class="input-medium search-query">
+		<button type="submit" class="btn btn-inverse">Search</button>
+	</form>
+<!-- NAV BAR -->
+    <div class="nav nav-pills">
+    <div class="dropdown">
+    	<a class="btn btn-primary">Home</a>
+    	
+        <a class="btn btn-inverse dropdown-toggle" data-toggle="dropdown" href="#"> Drowndown <b class="caret"></b></a>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+			<li><a href="#"> Thing 1</a></li>
+            <li><a href="#"> Thing 2</a></li>
+            <li><a href="#"> Thing 3</a></li>
+         </ul>
+         
+        <a class="btn btn-inverse dropdown-toggle" data-toggle="dropdown" href="#"> Drowndown <b class="caret"></b></a>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+			<li><a href="#"> Thing 1</a></li>
+            <li><a href="#"> Thing 2</a></li>
+            <li><a href="#"> Thing 3</a></li>
+         </ul>
+         
+        </div>
+    </div>
+ 
+</header> <!-- HEADER-->
+
+<section>
+<article id="imgGallery">
+<div id="myCarousel" class="carousel slide">
+  <!-- Carousel items -->
+  <div class="carousel-inner">
+    <div class="active item"><img src="img/carousel/dsc_0524.jpg" alt="macro shot1" />
+    <div class="carousel-caption">
+    	<h2>Title 1</h2>
+        <p>Some text about the image would be written here.</p>
+    </div></div>
+    <div class="item"><img src="img/carousel/dsc_0525.jpg" alt="macro shot2" />
+     <div class="carousel-caption">
+    	<h2>Title 2</h2>
+        <p>Some text about the image would be written here.</p>
+    </div></div>
+    <div class="item"><img src="img/carousel/dsc_0550.jpg" alt="macro shot3" />
+     <div class="carousel-caption">
+    	<h2>Title 3</h2>
+        <p>Some text about the image would be written here.</p>
+    </div></div>
+    <div class="item"><img src="img/carousel/dsc_0552.jpg" alt="macro shot4" />
+     <div class="carousel-caption">
+    	<h2>Title 4</h2>
+        <p>Some text about the image would be written here.</p>
+    </div></div>
+    <div class="item"><img src="img/carousel/dsc_0555.jpg" alt="macro shot5" />
+     <div class="carousel-caption">
+    	<h2>Title 5</h2>
+        <p>Some text about the image would be written here.</p>
+    </div></div>
+    <div class="item"><img src	="img/carousel/dsc_0557.jpg" alt="macro shot6" />
+  	 <div class="carousel-caption">
+    	<h2>Title 6</h2>
+        <p>Some text about the image would be written here.</p>
+    </div></div>
+  </div>
+  <!-- Carousel nav -->
+  <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+  <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+</div>
+</article>
+</section>
+
+<section class="content">
+<article>
+<ul class="breadcrumb">
+  <li><a href="#">Home</a> <span class="divider">/</span></li>
+  <li><a href="#">Dropdown</a> <span class="divider">/</span></li>
+  <li class="active">Thing 1</li>
+</ul>
+</article>
+
+<article class="column span7">
+  	<table class="table table-striped">
+  		<thead>
+          <tr>
+              <td>I.D.</td>
+              <td>Names</td>
+              <td>Registered</td>
+          </tr>
+        </thead>
+        
+        <tbody>
+          <tr>
+              <td>0008234342</td>
+              <td>John Smith</td>
+              <td>Yes</td>
+          </tr>
+          <tr>
+              <td>0008298723</td>
+              <td>Pocahontas Smith</td>
+              <td>No</td>
+          </tr>
+          <tr>
+              <td>0008458246</td>
+              <td>Dr. Jeykl</td>
+              <td>No/Yes</td>
+          </tr>
+          <tr>
+              <td>0008082376</td>
+              <td>Mr. Hyde</td>
+              <td>Yes</td>
+          </tr>
+          <tr>
+              <td>0008088263</td>
+              <td>Homer Simpson</td>
+              <td>DOH!</td>
+          </tr>
+        </tbody>
+	</table>
+</article>
+<article class="column form-center span4">
+ <form class="form-horizontal">
+  <div class="control-group">
+    <label class="control-label" for="inputEmail">Email</label>
+    <div class="controls">
+      <input type="text" id="inputEmail" placeholder="Email">
+    </div>
+  </div>
+  <div class="control-group">
+    <label class="control-label" for="inputPassword">Password</label>
+    <div class="controls">
+      <input type="password" id="inputPassword" placeholder="Password">
+    </div>
+  </div>
+  <div class="control-group">
+    <div class="controls">
+      <label class="checkbox">
+        <input type="checkbox"> Remember me
+      </label>
+      <button type="submit" class="btn">Sign in</button>
+    </div>
+  </div>
+</form>
+</article>
+</section>
+
+<footer>
+	<h4>Crystal Meyers</h4>
+    <h6>A00821291</h6>
+    <p>Messing around with Bootstrap!</p>
+</footer>
+
+</div><!-- WRAPPER -->
+
+
+
+<!-- -->
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
